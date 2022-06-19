@@ -1,1 +1,1 @@
-web: gunicorn nicks.wisgi
+web: gunicorn nicks.wsgi
