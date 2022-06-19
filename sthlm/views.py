@@ -8,4 +8,3 @@ class ShowMeal(generic.ListView):
     model = Meal
     template_name = 'index.html'
 
-

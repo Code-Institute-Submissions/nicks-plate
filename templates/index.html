@@ -2,52 +2,6 @@
 
 {% block content %}
 
-<!-- Welcome Image -->
-
-<!-- Welcme Text -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <section class="callout jumbotron text-center">
-                <h1>Welckome</h1>
-                <p class="text-muted"><small>To</small></p>
-                <h3 class="lead">Sunstreet<strong><strong>.</strong>12</strong>
-                    <span class="d-inline d-sm-none"><br></span>
-                </h3>
-
-                
-            </section>
-        </div>
-    </div>
-</div>
-    <!-- /.Welcome Image  -->
-
-    <!-- Nav -->
-<div class="container">
-    <nav class="navbar navbar-light navbar-expand-sm bg-light">
-        <a class="navbar-brand" href="{% url 'home' %}">Nicks Plate</a>
-
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span></button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contact
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Online Booking</a>
-                        <a class="dropdown-item" href="#">Call n Ask</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-</div>
 
 <!-- /.Main information -->
 <div class="container">
@@ -58,45 +12,62 @@
                 <hr />
             </div>
         </div>
+        <!-- Chefs todys dish -->
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        <img src="" class="rounded-circle mr-3" height=100 width=100>
+                        <img src="{{ meal.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <p>  </p>
+                            <h3>{{ meal.todays_meal }}</h3>
+                            <p>{{ meal.description }}</p>
                             <footer class="blockquote-footer">Chef</footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
+            <!-- Staffs storys of workplace -->
             <div class="col-12 col-md-6">
                 <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="{{ staff.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                    </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <p></p>
+                            <h3>{{ staff.staff_title }}</h3>
+                            <p>{{ staff.description }}</p>
                             <footer class="blockquote-footer">Staff</footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
+            <!-- Steakholders take on enviroment -->
             <div class="col-12 col-md-6">
                 <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="{{ enviroment.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                    </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <p></p>
+                            <h3>{{ enviroment.environment_title }}</h3>
+                            <p>{{ enviroment.description }}</p>
                             <footer class="blockquote-footer">Enviroment</footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
+            <!-- Nicks place policy for a better day -->
             <div class="col-12 col-md-6">
                 <div class="media">
+                    <div class="d-none d-sm-block">
+                        <img src="{{ policy.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                    </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <p></p>
+                            <h3>{{ policy.policy_title }}</h3>
+                            <p>{{ policy.description }}</p>
                             <footer class="blockquote-footer">Policy</footer>
                         </blockquote>
                     </div>
@@ -106,6 +77,4 @@
     </section>
 </div>
 <!-- /.Main information -->
-
-
 {% endblock %}
