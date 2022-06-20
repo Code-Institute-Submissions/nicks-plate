@@ -93,7 +93,15 @@
     </section>
     <div>
         {% if user.is_authenticated %}
-        <p>Hello</p>
+        <ul>
+            <li>Mondays: TEAM-Hans: 10:00 - 18:00</li>
+            <li>Tuesdays: TEAM-Hans: 10:00 - 18:00</li>
+            <li>Wednesdays: TEAM-Hans & -Alice: 15:00 - 21:15</li>
+            <li>Thursdays: TEAM-Hans & -Alice :10:00 - 18:00</li>
+            <li>Fridays: TEAM-Alice :09:00 - 15:00</li>
+            <li>Saturdays: Closed</li>
+            <li>Sundays: TEAM-Alice :09:00 - 15:00</li>
+        </ul>
         {% else %}
         <p></p>
         {% endif %}
