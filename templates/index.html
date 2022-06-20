@@ -91,6 +91,14 @@
             </div>
         </div>
     </section>
+    <div>
+        {% if user.is_authenticated %}
+        <p>Hello</p>
+        {% else %}
+        <p></p>
+        {% endif %}
+    </div>
 </div>
 <!-- /.Main information -->
 {% endblock %}
+
