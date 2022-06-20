@@ -100,6 +100,8 @@
     </section>
     <div>
         {% if user.is_authenticated %}
+        <hr />
+        <br>
         <ul>
             <li id="one">Mondays: TEAM-Hans: 10:00 - 18:00</li>
             <li id="two">Tuesdays: TEAM-Hans: 10:00 - 18:00</li>
@@ -109,12 +111,14 @@
             <li id="six">Saturdays: Closed</li>
             <li id="zero">Sundays: TEAM-Alice :09:00 - 15:00</li>
         </ul>
+        <hr />
+        <br>
         {% else %}
         <p></p>
+        
         {% endif %}
     </div>
 </div>
 <!-- /.Main information -->
 
 {% endblock %}
-

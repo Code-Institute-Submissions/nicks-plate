@@ -11,11 +11,14 @@ body {
     background-size: cover;
 }
 
-
 .jumbotron{
     background-color: rgba(0,0,0,.3);
     position: flex;
     height: 40vh;
+}
+
+h1{
+    color: aliceblue;
 }
 
 #scroll-down {
