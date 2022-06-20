@@ -7,17 +7,10 @@ class ShowMeal(ListView):
     model = Meal
     template_name = 'index.html'
 
-
-class ShowStaff(ListView):   
-    model = Staff
-    template_name = 'index.html'
-
-
-class ShowEnvironment(ListView):  
-    model = Environment
-    template_name = 'index.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['staff_list', 'environment_list', 'policy_list'] = Meal.objects.all()
+        return context
 
 
-class ShowPolicy(ListView):   
-    model = Policy
-    template_name = 'index.html'
+
