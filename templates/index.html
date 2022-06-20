@@ -23,11 +23,11 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            
+                            <time ><small>{{ meal.created_on }}</small></time>
                             <h3>{{ meal.todays_meal | safe }}</h3>
                             <p>{{ meal.description | safe }}</p>
-                            {% endfor %}
                             <footer class="blockquote-footer">Chef</footer>
+                            {% endfor %}
                         </blockquote>
                     </div>
                 </div>
@@ -42,10 +42,11 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
+                            <time ><small>{{ staff.created_on }}</small></time>
                             <h3>{{ staff.staff_title | safe }}</h3>
                             <p>{{ staff.description | safe }}</p>
-                            {% endfor %}
                             <footer class="blockquote-footer">Staff</footer>
+                            {% endfor %}
                         </blockquote>
                     </div>
                 </div>
@@ -60,7 +61,8 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <h3>{{ environment.environment_title | safe }}</h3>
+                            <time ><small>{{ environment.created_on }}</small></time>
+                            <h3>{{ environment.environment_title }}</h3>
                             <p>{{ environment.description | safe }}</p>
                             <footer class="blockquote-footer">Enviroment</footer>
                             {% endfor %}
@@ -78,6 +80,7 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
+                            <time ><small>{{ policy.created_on }}</small></time>
                             <h3>{{ policy.policy_title | safe }}</h3>
                             <p>{{ policy.description | safe }}</p>
                             <footer class="blockquote-footer">Policy</footer>
