@@ -2,10 +2,10 @@
 /* font-family: 'Codystar', cursive; */
 
 body {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive, sans-serif;
 }
 
-.welcome-img-top {
+.welcome-img {
     height: 100vh;
     background: url(https://cdn.pixabay.com/photo/2022/06/13/12/19/sea-7259914_960_720.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -18,3 +18,6 @@ body {
     height: 40vh;
 }
 
+#scroll-down {
+    cursor: pointer;
+}
