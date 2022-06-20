@@ -12,71 +12,74 @@
                 <hr />
             </div>
         </div>
+
         <!-- Chefs todys dish -->
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="media">
                     <div class="d-none d-sm-block">
                         {% for meal in object_list %}
-                        <img src="{{ meal.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
-                        
+                        <img src="{{ meal.featured_image.url }}" class="rounded-circle mr-3" height=100 width=100>                      
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
                             
-                            <h3>{{ meal.todays_meal }}</h3>
-                            <p>{{ meal.description }}</p>
+                            <h3>{{ meal.todays_meal | safe }}</h3>
+                            <p>{{ meal.description | safe }}</p>
                             {% endfor %}
                             <footer class="blockquote-footer">Chef</footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
+
             <!-- Staffs storys of workplace -->
             <div class="col-12 col-md-6">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        {% for staff in object_list %}
-                        <img src="{{ staff.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                        {% for staff in staff_list %}
+                        <img src="{{ staff.featured_image.url }}" class="rounded-circle mr-3" height=100 width=100>
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <h3>{{ staff.staff_title }}</h3>
-                            <p>{{ staff.description }}</p>
-                            <footer class="blockquote-footer">Staff</footer>
+                            <h3>{{ staff.staff_title | safe }}</h3>
+                            <p>{{ staff.description | safe }}</p>
                             {% endfor %}
+                            <footer class="blockquote-footer">Staff</footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
+
             <!-- Steakholders take on enviroment -->
             <div class="col-12 col-md-6">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        {% for enviroment in object_list %}
-                        <img src="{{ enviroment.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                        {% for environment in environment_list %}
+                        <img src="{{ environment.featured_image.url }}" class="rounded-circle mr-3" height=100 width=100>
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <h3>{{ enviroment.environment_title }}</h3>
-                            <p>{{ enviroment.description }}</p>
+                            <h3>{{ environment.environment_title | safe }}</h3>
+                            <p>{{ environment.description | safe }}</p>
                             <footer class="blockquote-footer">Enviroment</footer>
                             {% endfor %}
                         </blockquote>
                     </div>
                 </div>
             </div>
+
             <!-- Nicks place policy for a better day -->
             <div class="col-12 col-md-6">
                 <div class="media">
                     <div class="d-none d-sm-block">
-                        {% for policy in object_list %}
-                        <img src="{{ policy.featured_image }}" class="rounded-circle mr-3" height=100 width=100>
+                        {% for policy in policy_list %}
+                        <img src="{{ policy.featured_image.url }}" class="rounded-circle mr-3" height=100 width=100>
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <h3>{{ policy.policy_title }}</h3>
-                            <p>{{ policy.description }}</p>
+                            <h3>{{ policy.policy_title | safe }}</h3>
+                            <p>{{ policy.description | safe }}</p>
                             <footer class="blockquote-footer">Policy</footer>
                             {% endfor %}
                         </blockquote>
