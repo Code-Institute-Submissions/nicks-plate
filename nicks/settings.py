@@ -166,4 +166,3 @@ DEFAULT_FILES_STORAGE = 'cloudinary_storage.storage.Media.CloudinaryStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
