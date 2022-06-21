@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Special+Elite&display=swap');
 
-
 body {
     font-family: 'Special Elite', cursive, sans-serif;
 }
@@ -10,8 +9,6 @@ body {
     background: url(https://cdn.pixabay.com/photo/2022/06/13/12/19/sea-7259914_960_720.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-
-
 
 .jumbotron{
     background-color: rgba(0,0,0,.3);
@@ -26,6 +23,4 @@ h1 ,i{
 #scroll-down {
     cursor: pointer;
 }
-
-
 
