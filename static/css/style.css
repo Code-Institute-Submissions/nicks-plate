@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Special+Elite&display=swap');
-/* font-family: 'Codystar', cursive; */
 
 body {
     font-family: 'Special Elite', cursive, sans-serif;
@@ -13,11 +12,11 @@ body {
 
 .jumbotron{
     background-color: rgba(0,0,0,.3);
-    position: flex;
     height: 40vh;
+    margin: 0px -15px;
 }
 
-h1{
+h1 ,i{
     color: aliceblue;
 }
 

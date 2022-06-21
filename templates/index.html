@@ -30,7 +30,7 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <time ><small>{{ meal.created_on }}</small></time>
+                            <time >{{ meal.created_on }}</time>
                             <h3>{{ meal.todays_meal | safe }}</h3>
                             <p>{{ meal.description | safe }}</p>
                             <footer class="blockquote-footer">Chef</footer>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <time ><small>{{ staff.created_on }}</small></time>
+                            <time >{{ staff.created_on }}</time>
                             <h3>{{ staff.staff_title | safe }}</h3>
                             <p>{{ staff.description | safe }}</p>
                             <footer class="blockquote-footer">Staff</footer>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <time ><small>{{ environment.created_on }}</small></time>
+                            <time >{{ environment.created_on }}</time>
                             <h3>{{ environment.environment_title }}</h3>
                             <p>{{ environment.description | safe }}</p>
                             <footer class="blockquote-footer">Enviroment</footer>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="media-body">
                         <blockquote class="blockquote">
-                            <time ><small>{{ policy.created_on }}</small></time>
+                            <time >{{ policy.created_on }}</time>
                             <h3>{{ policy.policy_title | safe }}</h3>
                             <p>{{ policy.description | safe }}</p>
                             <footer class="blockquote-footer">Policy</footer>
@@ -102,15 +102,18 @@
         {% if user.is_authenticated %}
         <hr />
         <br>
-        <ul>
-            <li id="one">Mondays: TEAM-Hans: 10:00 - 18:00</li>
-            <li id="two">Tuesdays: TEAM-Hans: 10:00 - 18:00</li>
-            <li id="three">Wednesdays: TEAM-Hans & -Alice: 15:00 - 21:15</li>
-            <li id="four">Thursdays: TEAM-Hans & -Alice :10:00 - 18:00</li>
-            <li id="five">Fridays: TEAM-Alice :09:00 - 15:00</li>
-            <li id="six">Saturdays: Closed</li>
-            <li id="zero">Sundays: TEAM-Alice :09:00 - 15:00</li>
-        </ul>
+        <div class="col-lg-6 col-md-8 col-12">
+            <ul>
+                <li id="one">Mondays: TEAM-Hans: 10:00 - 18:00</li>
+                <li id="two">Tuesdays: TEAM-Hans: 10:00 - 18:00</li>
+                <li id="three">Wednesdays: TEAM-Hans & -Alice: 15:00 - 21:15</li>
+                <li id="four">Thursdays: TEAM-Hans & -Alice :10:00 - 18:00</li>
+                <li id="five">Fridays: TEAM-Alice :09:00 - 15:00</li>
+                <li id="six">Saturdays: Closed</li>
+                <li id="zero">Sundays: TEAM-Alice :09:00 - 15:00</li>
+            </ul>
+        </div>
+        
         <hr />
         <br>
         {% else %}
