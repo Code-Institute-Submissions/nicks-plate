@@ -1,7 +1,8 @@
-const testDay = require('../day');
+const testDay = require('/day');
 const d = new Date()
 let day = d.getDay()
-today = day
+today = day 
+// today == Tuesday
 
 describe('day', () => {
     describe('dayIsMonday', () => {
@@ -40,3 +41,9 @@ describe('day', () => {
         })
     })
 })
+
+// Test Suites: 1 passed, 1 total
+// Tests:       7 passed, 7 total
+// Snapshots:   0 total
+// Time:        0.698 s, estimated 1 s
+// Ran all test suites.
