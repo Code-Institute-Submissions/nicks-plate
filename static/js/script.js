@@ -5,6 +5,8 @@ setTimeout(function() {
     alert.close()
 }, 3000);
 
+
+
 // Auto scroll down 100vh from header
 document.getElementById("scroll-down").addEventListener('click', () => {
     window.scrollTo(0, window.innerHeight);
