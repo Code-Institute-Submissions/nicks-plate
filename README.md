@@ -16,3 +16,16 @@ Information in this website for the custumer is about
 
 ## Features 
 
+The welcoming front hopfully gives the costumer a feeling that the water moves but is calm. 
+Beneath the fron is a short briefing of the soul of the restaurant, there is also a schedule that can 
+be seen if you sign in. 
+
+
+### Extra Features
+
+The website is built in Django and from *Djangos Admin page* employee can upload new information to the website. 
+Imnage information and text will be saved in separate servers. 
+
+- [Django Admin](http://nicks-plate.herokuapp.com/admin/login/?next=/admin/)
+
+![Django admin Image](./media/django-admin.png)
