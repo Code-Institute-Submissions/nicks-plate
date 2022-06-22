@@ -1,8 +1,8 @@
 # Nicks Plate
 
-Welcome to Nicks Plate. This is a prototype of a hip restaurant that hopfully will engage both employee and the costumers. 
-Personaly I feel that the web is crouded with both clicks here and information there. So much that It sometimes feels misleading. 
-Information in this website for the custumer is about 
+Welcome to Nicks Plate. This is a prototype of a hip restaurant that hopefully will engage both employees and the customers. 
+I feel that the web is crowded with both clicks here and information there. So much that It sometimes feels misleading. 
+Information on this website for the customer is about 
 
 - __Chef Today's Dish__
 
@@ -16,24 +16,24 @@ Information in this website for the custumer is about
 
 ## Features 
 
-The welcoming front hopfully gives the costumer a feeling that the water moves but is calm. 
-Beneath the fron is a short briefing of the soul of the restaurant, there is also a schedule that can 
+The welcoming front hopefully gives the customer a feeling that the water moves but is calm. 
+Beneath the front is a short briefing of the soul of the restaurant, there is also a schedule that can 
 be seen if you sign in. 
 
 
 ### Extra Features
 
-The website is built in Django and from *Djangos Admin page* employee can upload new information to the website. 
-Imnage information and text will be saved in separate servers. 
+The website is built in Django and from *the Djangos Admin page* employees can upload new information to the website. 
+Image information and text will be saved in separate servers. 
 
 - [Django Admin](http://nicks-plate.herokuapp.com/admin/login/?next=/admin/)
 
-![Django admin Image](./media/django-admin.png)
+![Django admin Image](./media/django-admin-shorten.png)
 
 
 ### Validation 
 
-- No problems have been detected in the wokspace.
+- No problems have been detected in the workspace.
 
 ### Package of use 
 
@@ -56,21 +56,21 @@ sqlparse==0.4.2
 
 ### Deplyment
 
-This site is deployed through Heroku, Heroku connets to the GitHub repository, cloudinary and heroku postgres.
+This site is deployed through Heroku, Heroku connects to the GitHub repository, Cloudinary, and Heroku Postgres.
 
 The live link can be found here - http://nicks-plate.herokuapp.com/
 
 
 ### Unfixed Bugs 
 
-My browser is says that the website is not safe, unsure why.
+My browser says that the website is not safe, unsure why.
 
 ![Not Safe Image](./media/not-safe.png)
 
 
 ### Credits
 
-Credits goes out to the team of Code Institute, this is made thanks to there examples and expertise. If you like to learn more about code, you should visit 
+Credits go out to the team of Code Institute, this is made thanks to their examples and expertise. If you like to learn more about code, you should visit 
 - https://codeinstitute.net/ 
 
 ### Media 
@@ -79,7 +79,7 @@ Some of the Image used here is from
 - https://pixabay.com/
 
 
-- __thanks for stepping by__
+## thanks for stepping by
 
 
 
