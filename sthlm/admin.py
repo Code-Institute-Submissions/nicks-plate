@@ -6,7 +6,7 @@ from .models import Meal, Environment, Staff, Policy
 
 @admin.register(Meal)
 class MealAdmin(SummernoteModelAdmin):
-    
+    """ this is listed for the chef in admin """
     list_display = ('todays_meal', 'created_on')
     list_filter = ('created_on',)
     summernote_fields = ('description')
@@ -14,7 +14,7 @@ class MealAdmin(SummernoteModelAdmin):
 
 @admin.register(Environment)
 class EnvironmentAdmin(SummernoteModelAdmin):
-
+    """ this is listed for the environment in admin """
     list_display = ('environment_title', 'created_on')
     list_filter = ('created_on',)
     summernote_fields = ('description')
@@ -22,7 +22,7 @@ class EnvironmentAdmin(SummernoteModelAdmin):
 
 @admin.register(Staff)
 class StaffAdmin(SummernoteModelAdmin):
-
+    """ this is listed for the staff in admin """
     list_display = ('staff_title', 'created_on')
     list_filter = ('created_on',)
     summernote_fields = ('description')
@@ -30,7 +30,7 @@ class StaffAdmin(SummernoteModelAdmin):
 
 @admin.register(Policy)
 class PolicyAdmin(SummernoteModelAdmin):
-
+    """ this is listed for the steakholders in admin """
     list_display = ('policy_title', 'created_on')
     list_filter = ('created_on',)
     summernote_fields = ('description')

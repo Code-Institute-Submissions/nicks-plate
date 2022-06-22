@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 
 class Meal(models.Model):
+    """ Chef adds meal """
     todays_meal = models.CharField(max_length=50)
     description = models.TextField()
     featured_image = CloudinaryField()
@@ -16,6 +17,7 @@ class Meal(models.Model):
 
 
 class Environment(models.Model):
+    """ add esg uppdate """
     environment_title = models.CharField(max_length=50)
     description = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
@@ -26,6 +28,7 @@ class Environment(models.Model):
 
 
 class Staff(models.Model):
+    """ Staff gives input """
     staff_title = models.CharField(max_length=50)
     description = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
@@ -36,6 +39,7 @@ class Staff(models.Model):
 
 
 class Policy(models.Model):
+    """ gives the policy """
     policy_title = models.CharField(max_length=50)
     description = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')

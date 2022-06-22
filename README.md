@@ -29,3 +29,57 @@ Imnage information and text will be saved in separate servers.
 - [Django Admin](http://nicks-plate.herokuapp.com/admin/login/?next=/admin/)
 
 ![Django admin Image](./media/django-admin.png)
+
+
+### Validation 
+
+- No problems have been detected in the wokspace.
+
+### Package of use 
+
+asgiref==3.5.2
+cloudinary==1.29.0
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.6
+Django==3.2.13
+django-allauth==0.51.0
+django-summernote==0.8.20.0
+gunicorn==20.1.0
+oauthlib==3.2.0
+psycopg2==2.9.3
+PyJWT==2.4.0
+python3-openid==3.2.0
+pytz==2022.1
+requests-oauthlib==1.3.1
+sqlparse==0.4.2
+
+
+### Deplyment
+
+This site is deployed through Heroku, Heroku connets to the GitHub repository, cloudinary and heroku postgres.
+
+The live link can be found here - http://nicks-plate.herokuapp.com/
+
+
+### Unfixed Bugs 
+
+My browser is says that the website is not safe, unsure why.
+
+![Not Safe Image](./media/not-safe.png)
+
+
+### Credits
+
+Credits goes out to the team of Code Institute, this is made thanks to there examples and expertise. If you like to learn more about code, you should visit 
+- https://codeinstitute.net/ 
+
+### Media 
+
+Some of the Image used here is from 
+- https://pixabay.com/
+
+
+- __thanks for stepping by__
+
+
+
